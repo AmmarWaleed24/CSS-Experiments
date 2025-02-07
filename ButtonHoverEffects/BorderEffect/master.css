@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:root {
+  --dark: #181a1e
+  --gray: #25252c;
+  --light: #fff;
+  --sec-gray: #aaa;
+  --blue: #3a6ff8;
+  --light-blue: #3767f8;
+  --solana: #1ec24d;
+  --ethereum: #386aeb;
+  --light-coin: #5fc2e9;
+  --orange: #f46d22;
+  --danger: #d32f2f;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+width: 160px;
+height: 80px;
+background-color: #aaa;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+overflow: hidden;
+}
+
+.container .bx {
+width: 100%;
+height: 100%;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container .bx span {
+color: black;
+background-color: black;
+z-index: 34343;
+position: absolute;
+transition: all ease 0.3s;
+}
+
+.container .bx span:nth-child(1),
+.container .bx span:nth-child(3) {
+width: 100%;
+height: 2px;
+
+}
+
+.container .bx span:nth-child(2),
+.container .bx span:nth-child(4) {
+width: 2px;
+height: 100%;
+
+}
+
+
+.container .bx span:nth-child(1) {
+top: 0;
+left: -100%;
+/* transition-delay: 0; */
+}
+
+.container .bx span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  /* transition-delay: 0.6s; */
+
+  }
+  .container .bx span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    /* transition-delay: 0.3s; */
+
+    }
+    .container .bx span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      /* transition-delay: 0.9s; */
+
+      }
+      
+    .bx:hover span:nth-child(1) {
+    left: 0;
+    }
+    .bx:hover span:nth-child(3) {
+      right: 0;
+      }
+      .bx:hover span:nth-child(2) {
+        top: 0;
+        }
+        .bx:hover span:nth-child(4) {
+          bottom: 0;
+          }
